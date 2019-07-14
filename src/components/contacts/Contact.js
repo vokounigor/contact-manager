@@ -35,9 +35,9 @@ class Contact extends Component {
           return (
             <div className="card card-body mb-3">
               <h4>
-                {name + " "}
+                {name}{'  '}
                 <i className="info" onClick={this.onShowClick}>
-                  {isShowing ? "-" : "+"}
+                  {isShowing ? <i className="fas fa-angle-up"></i> : <i className="fas fa-angle-down"></i>}
                 </i>
                 <i
                   className="del fas fa-trash"
